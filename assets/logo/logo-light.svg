@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" role="img" aria-label="Jan's Simply Cleaning Services">
+  <rect width="72" height="72" rx="18" fill="#FFFFFF"/>
+  <path d="M16 34 36 16l20 18" fill="none" stroke="#0F4C46" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 32v18a4 4 0 0 0 4 4h20a4 4 0 0 0 4-4V32" fill="none" stroke="#0F4C46" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 36l2 4.6 4.6 2-4.6 2-2 4.6-2-4.6-4.6-2 4.6-2 2-4.6z" fill="#E9A23B"/>
+  <text x="88" y="34" font-family="Manrope, Arial, sans-serif" font-size="21" font-weight="800" fill="#FFFFFF">Jan's Simply</text>
+  <text x="88" y="58" font-family="Manrope, Arial, sans-serif" font-size="21" font-weight="800" fill="#F3C87A">Cleaning Services</text>
+</svg>
