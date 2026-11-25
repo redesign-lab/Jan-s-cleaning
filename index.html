@@ -16,14 +16,21 @@
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span class="topbar-loc">Saint Simons Island · Brunswick · Golden Isles, GA</span>
+    <span class="topbar-links">
+      <a href="tel:+19126025168">(912) 602-5168</a>
+      <a href="mailto:jankinney90@gmail.com">jankinney90@gmail.com</a>
+    </span>
+  </div>
+</div>
+
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
     <a class="brand" href="#home" aria-label="Jan's Simply Cleaning Services — home">
-      <img src="assets/logo/logo-icon.svg" alt="" width="44" height="44">
-      <span class="brand-text">
-        <span class="brand-name">Jan's Simply</span>
-        <span class="brand-sub">Cleaning Services</span>
-      </span>
+      <img src="assets/logo/logo.svg" alt="Jan's Simply Cleaning Services logo" width="230" height="48">
     </a>
     <nav class="main-nav" id="mainNav" aria-label="Primary">
       <a href="#home">Home</a>
@@ -48,16 +55,18 @@
 
 <main id="main">
 
-  <!-- HERO -->
+  <!-- HERO — full-bleed background image -->
   <section class="hero" id="home">
-    <div class="container hero-grid">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container hero-inner">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Locally owned · Golden Isles, Georgia</p>
-        <h1>A cleaner home.<br>A calmer mind.</h1>
+        <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span>Locally Owned · Golden Isles, Georgia</p>
+        <h1>A cleaner home.<br><em>A calmer mind.</em></h1>
         <p class="hero-lead">Simple, reliable cleaning and caring support for your home — from routine housekeeping and deep cleans to personal assistance, pet sitting and caregiver support.</p>
         <div class="hero-ctas">
-          <a class="btn btn-accent" href="tel:+19126025168">Call (912) 602-5168</a>
-          <a class="btn btn-outline" href="#services">Explore Services</a>
+          <a class="btn btn-accent btn-lg" href="tel:+19126025168">Call (912) 602-5168</a>
+          <a class="btn btn-glass btn-lg" href="#services">Explore Services</a>
         </div>
         <ul class="hero-points">
           <li>Serving Saint Simons Island &amp; Brunswick</li>
@@ -65,31 +74,37 @@
           <li>Care for your home, family and pets</li>
         </ul>
       </div>
-      <div class="hero-visual reveal">
-        <figure class="hero-photo">
-          <img src="assets/images/hero-cleaning.jpg" alt="Jan's Simply Cleaning Services cleaner in a teal uniform cleaning a bright kitchen" width="900" height="1100" fetchpriority="high">
-        </figure>
-        <div class="hero-badge">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-          <span><strong>Led by Jan Kinney</strong><br>Locally operated &amp; trusted</span>
-        </div>
-      </div>
+      <aside class="hero-panel reveal" aria-label="About the owner">
+        <img class="hero-emblem" src="assets/logo/logo-emblem.svg" alt="" width="120" height="120">
+        <p class="hero-panel-title">Led by Jan Kinney</p>
+        <p>Locally operated &amp; trusted — treating your home and family with care, honesty and attention to detail.</p>
+        <a class="hero-panel-link" href="#about">Meet Jan's Simply <span aria-hidden="true">→</span></a>
+      </aside>
     </div>
+    <a class="scroll-hint" href="#about" aria-label="Scroll down"><span></span></a>
   </section>
+
+  <!-- MARQUEE TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Residential Cleaning</span><i>✦</i><span>Deep Cleaning</span><i>✦</i><span>Home Care</span><i>✦</i><span>Pet Sitting</span><i>✦</i><span>Child Care</span><i>✦</i><span>Caregiver Support</span><i>✦</i>
+      <span>Residential Cleaning</span><i>✦</i><span>Deep Cleaning</span><i>✦</i><span>Home Care</span><i>✦</i><span>Pet Sitting</span><i>✦</i><span>Child Care</span><i>✦</i><span>Caregiver Support</span><i>✦</i>
+    </div>
+  </div>
 
   <!-- TRUST BAR -->
   <section class="trust-bar" aria-label="Highlights">
     <div class="container trust-grid">
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      <div class="trust-item reveal">
+        <span class="trust-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
         <span><strong>Saint Simons Island &amp; Brunswick</strong><br>Proudly serving the Golden Isles</span>
       </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg>
+      <div class="trust-item reveal">
+        <span class="trust-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg></span>
         <span><strong>Flexible scheduling</strong><br>Weekly, bi-weekly or monthly</span>
       </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+      <div class="trust-item reveal">
+        <span class="trust-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
         <span><strong>Home &amp; family care</strong><br>Cleaning, assistance &amp; pet care</span>
       </div>
     </div>
@@ -99,11 +114,13 @@
   <section class="section about" id="about">
     <div class="container about-grid">
       <div class="about-visual reveal">
-        <img src="assets/images/about-home.jpg" alt="A bright, neatly kept living room cared for by Jan's Simply Cleaning Services" width="900" height="700" loading="lazy">
-        <p class="about-caption">A clean, well-cared-for home brings peace of mind.</p>
+        <div class="about-frame">
+          <img src="assets/images/hero-cleaning.jpg" alt="Jan's Simply Cleaning Services cleaner in a teal uniform cleaning a bright kitchen" width="900" height="1100" loading="lazy">
+        </div>
+        <img class="about-emblem" src="assets/logo/logo-emblem.svg" alt="" width="110" height="110" loading="lazy">
       </div>
       <div class="about-copy reveal">
-        <p class="eyebrow">About Us</p>
+        <p class="eyebrow"><span class="eyebrow-line"></span>About Us</p>
         <h2>Care, honesty and attention to detail — in every home we serve</h2>
         <p>Led by <strong>Jan Kinney</strong>, Jan's Simply Cleaning Services is a trusted, locally operated home cleaning and personal support service proudly serving Saint Simons Island and Brunswick, Georgia.</p>
         <p>We believe a clean, well-cared-for home brings peace of mind. Whether you need routine housekeeping, deep cleaning, or reliable personal assistance, we treat your home and family with the utmost care, honesty, and attention to detail.</p>
@@ -112,66 +129,88 @@
           <li>Personalized care for every household</li>
           <li>Honest, dependable and detail-focused</li>
         </ul>
-        <a class="btn btn-primary" href="#contact">Get in Touch</a>
+        <div class="about-ctas">
+          <a class="btn btn-primary" href="#contact">Get in Touch</a>
+          <a class="btn btn-outline" href="tel:+19126025168">Call (912) 602-5168</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- SERVICES — image cards -->
   <section class="section services" id="services">
     <div class="container">
       <div class="section-head reveal">
-        <p class="eyebrow">Our Services</p>
+        <p class="eyebrow"><span class="eyebrow-line"></span>Our Services</p>
         <h2>Everything your home needs, simply handled</h2>
         <p>From everyday tidying to a full deep clean — and the personal support that makes daily life easier.</p>
       </div>
-
-      <div class="service-list">
-        <article class="service-row reveal">
-          <span class="service-num">01</span>
-          <div class="service-body">
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="service-media"><img src="assets/images/about-home.jpg" alt="Bright, freshly cleaned living room" width="640" height="420" loading="lazy"><span class="service-tag">Recurring</span></div>
+          <div class="service-info">
+            <span class="service-num">01</span>
             <h3>Residential House Cleaning</h3>
             <p>Regular weekly, bi-weekly or monthly house cleaning that keeps your home consistently fresh and comfortable.</p>
+            <a href="#contact">Book this service <span aria-hidden="true">→</span></a>
           </div>
-          <img src="assets/images/about-home.jpg" alt="Bright, freshly cleaned living room" width="520" height="360" loading="lazy">
         </article>
-
-        <article class="service-row reveal">
-          <span class="service-num">02</span>
-          <div class="service-body">
+        <article class="service-card reveal">
+          <div class="service-media"><img src="assets/images/deep-clean.jpg" alt="Detailed deep cleaning of a sparkling bathroom" width="640" height="420" loading="lazy"><span class="service-tag">Thorough</span></div>
+          <div class="service-info">
+            <span class="service-num">02</span>
             <h3>Deep Cleaning &amp; Housekeeping</h3>
             <p>Thorough deep cleaning for kitchens, bathrooms, floors and the whole home — ideal for seasonal refreshes and move-ins.</p>
+            <a href="#contact">Book this service <span aria-hidden="true">→</span></a>
           </div>
-          <img src="assets/images/deep-clean.jpg" alt="Detailed deep cleaning of a sparkling bathroom" width="520" height="360" loading="lazy">
         </article>
-
-        <article class="service-row reveal">
-          <span class="service-num">03</span>
-          <div class="service-body">
+        <article class="service-card reveal">
+          <div class="service-media"><img src="assets/images/hero-cleaning.jpg" alt="Caregiver providing friendly home assistance" width="640" height="420" loading="lazy"><span class="service-tag">Daily Living</span></div>
+          <div class="service-info">
+            <span class="service-num">03</span>
             <h3>Home Care &amp; Personal Assistance</h3>
             <p>Help with everyday household tasks and keeping the home organized, so daily routines run smoothly.</p>
+            <a href="#contact">Book this service <span aria-hidden="true">→</span></a>
           </div>
-          <img src="assets/images/hero-cleaning.jpg" alt="Caregiver providing friendly home assistance" width="520" height="360" loading="lazy">
         </article>
-
-        <article class="service-row reveal">
-          <span class="service-num">04</span>
-          <div class="service-body">
+        <article class="service-card reveal">
+          <div class="service-media"><img src="assets/images/pet-care.jpg" alt="Pet sitter playing with a happy dog at home" width="640" height="420" loading="lazy"><span class="service-tag">While You're Away</span></div>
+          <div class="service-info">
+            <span class="service-num">04</span>
             <h3>Pet Sitting</h3>
             <p>Trusted care for your pets while you are away — feeding, companionship and attention in the comfort of home.</p>
+            <a href="#contact">Book this service <span aria-hidden="true">→</span></a>
           </div>
-          <img src="assets/images/pet-care.jpg" alt="Pet sitter playing with a happy dog at home" width="520" height="360" loading="lazy">
         </article>
-
-        <article class="service-row reveal">
-          <span class="service-num">05</span>
-          <div class="service-body">
+        <article class="service-card reveal">
+          <div class="service-media"><img src="assets/images/gallery-bedroom.jpg" alt="Warm, caring support at home" width="640" height="420" loading="lazy"><span class="service-tag">Family Support</span></div>
+          <div class="service-info">
+            <span class="service-num">05</span>
             <h3>Child Care &amp; Caregiver Support</h3>
             <p>Reliable childcare and caregiver support when you need an extra pair of trusted hands at home.</p>
+            <a href="#contact">Book this service <span aria-hidden="true">→</span></a>
           </div>
-          <img src="assets/images/pet-care.jpg" alt="Warm, caring support at home" width="520" height="360" loading="lazy">
+        </article>
+        <article class="service-card service-card-cta reveal">
+          <div class="service-info">
+            <span class="service-num">✦</span>
+            <h3>Not sure what you need?</h3>
+            <p>Tell us about your home — we will help you choose the right service and schedule.</p>
+            <a class="btn btn-accent" href="tel:+19126025168">Call (912) 602-5168</a>
+          </div>
         </article>
       </div>
+    </div>
+  </section>
+
+  <!-- GALLERY STRIP -->
+  <section class="gallery" aria-label="Our work">
+    <div class="gallery-track">
+      <figure><img src="assets/images/gallery-kitchen.jpg" alt="Sparkling clean kitchen" width="640" height="460" loading="lazy"><figcaption>Sparkling kitchens</figcaption></figure>
+      <figure><img src="assets/images/deep-clean.jpg" alt="Gleaming bathroom detail" width="640" height="460" loading="lazy"><figcaption>Detailed bathrooms</figcaption></figure>
+      <figure><img src="assets/images/gallery-bedroom.jpg" alt="Freshly made bedroom" width="640" height="460" loading="lazy"><figcaption>Fresh, restful bedrooms</figcaption></figure>
+      <figure><img src="assets/images/pet-care.jpg" alt="Happy pet care at home" width="640" height="460" loading="lazy"><figcaption>Happy pets at home</figcaption></figure>
+      <figure><img src="assets/images/about-home.jpg" alt="Bright welcoming living room" width="640" height="460" loading="lazy"><figcaption>Welcoming living spaces</figcaption></figure>
     </div>
   </section>
 
@@ -179,7 +218,7 @@
   <section class="section why" id="why">
     <div class="container">
       <div class="section-head reveal">
-        <p class="eyebrow">Why Choose Us</p>
+        <p class="eyebrow"><span class="eyebrow-line"></span>Why Choose Us</p>
         <h2>Local, personal and flexible — the way home care should be</h2>
       </div>
       <div class="why-grid">
@@ -206,7 +245,7 @@
   <section class="section process" aria-label="How it works">
     <div class="container">
       <div class="section-head reveal">
-        <p class="eyebrow">How It Works</p>
+        <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span>How It Works</p>
         <h2>Getting started is simple</h2>
       </div>
       <ol class="process-grid">
@@ -233,20 +272,22 @@
   <section class="section areas" id="areas">
     <div class="container">
       <div class="section-head reveal">
-        <p class="eyebrow">Service Areas</p>
+        <p class="eyebrow"><span class="eyebrow-line"></span>Service Areas</p>
         <h2>Proudly serving the Golden Isles</h2>
         <p>We serve Saint Simons Island, Brunswick and the surrounding Golden Isles area of coastal Georgia.</p>
       </div>
       <div class="areas-grid">
         <article class="area-card reveal">
+          <span class="area-pin"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
           <h3>Saint Simons Island</h3>
           <address>108 Shore Rush Circle<br>Saint Simons Island, GA 31522</address>
-          <a href="tel:+19126025168">Call to book</a>
+          <a href="tel:+19126025168">Call to book <span aria-hidden="true">→</span></a>
         </article>
         <article class="area-card reveal">
+          <span class="area-pin"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
           <h3>Brunswick</h3>
           <address>116 Gaye Street<br>Brunswick, GA</address>
-          <a href="tel:+19125801132">Call to book</a>
+          <a href="tel:+19125801132">Call to book <span aria-hidden="true">→</span></a>
         </article>
       </div>
     </div>
@@ -256,7 +297,7 @@
   <section class="section faq" id="faq">
     <div class="container faq-wrap">
       <div class="section-head reveal">
-        <p class="eyebrow">FAQ</p>
+        <p class="eyebrow"><span class="eyebrow-line"></span>FAQ</p>
         <h2>Questions, answered</h2>
       </div>
       <div class="accordion reveal">
@@ -288,7 +329,7 @@
   <section class="section contact" id="contact">
     <div class="container contact-grid">
       <div class="contact-copy reveal">
-        <p class="eyebrow">Contact Us</p>
+        <p class="eyebrow"><span class="eyebrow-line"></span>Contact Us</p>
         <h2>Let's make your home feel simply wonderful</h2>
         <p>Call or email to discuss your cleaning and home care needs. We will help you find a schedule that fits.</p>
         <ul class="contact-list">
@@ -320,14 +361,17 @@
     </div>
   </section>
 
-  <!-- FINAL CTA -->
+  <!-- FINAL CTA — background image -->
   <section class="final-cta">
+    <div class="cta-bg" aria-hidden="true"></div>
+    <div class="cta-overlay" aria-hidden="true"></div>
     <div class="container final-cta-inner reveal">
+      <img class="cta-emblem" src="assets/logo/logo-emblem.svg" alt="" width="96" height="96" loading="lazy">
       <h2>Simple, reliable cleaning &amp; caring support for your home.</h2>
       <p>Call today and enjoy a home that feels cared for — inside and out.</p>
       <div class="hero-ctas">
-        <a class="btn btn-accent" href="tel:+19126025168">Call (912) 602-5168</a>
-        <a class="btn btn-light" href="mailto:jankinney90@gmail.com">Email Us</a>
+        <a class="btn btn-accent btn-lg" href="tel:+19126025168">Call (912) 602-5168</a>
+        <a class="btn btn-glass btn-lg" href="mailto:jankinney90@gmail.com">Email Us</a>
       </div>
     </div>
   </section>
@@ -337,7 +381,7 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <img src="assets/logo/logo-light.svg" alt="Jan's Simply Cleaning Services" width="220" height="50">
+      <img src="assets/logo/logo-light.svg" alt="Jan's Simply Cleaning Services" width="240" height="50">
       <p>Simple, reliable cleaning &amp; caring support for your home. Led by Jan Kinney, serving Saint Simons Island and Brunswick, Georgia.</p>
     </div>
     <nav class="footer-nav" aria-label="Footer">

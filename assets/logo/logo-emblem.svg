@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Jan's Simply Cleaning Services emblem">
+  <defs>
+    <path id="topArc" d="M120,120 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/>
+  </defs>
+  <circle cx="120" cy="120" r="116" fill="#0F4C46"/>
+  <circle cx="120" cy="120" r="116" fill="none" stroke="#E9A23B" stroke-width="3"/>
+  <circle cx="120" cy="120" r="104" fill="none" stroke="#E9A23B" stroke-width="1" opacity=".55"/>
+  <circle cx="120" cy="120" r="66" fill="#0B3834" stroke="#E9A23B" stroke-width="1.5"/>
+  <text font-family="Manrope, Arial, sans-serif" font-size="16.5" font-weight="800" letter-spacing="3.5" fill="#F5E9C8">
+    <textPath href="#topArc" startOffset="2%">JAN'S SIMPLY CLEANING SERVICES</textPath>
+  </text>
+  <g transform="translate(120,122)">
+    <path d="M-34 -6 0 -38 34 -6" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-26 -2v26a6 6 0 0 0 6 6h40a6 6 0 0 0 6-6v-26" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M0 -14l3.2 7.3L10.5 -3.5 3.2 -.3 0 7l-3.2-7.3L-10.5-3.5l7.3-3.2L0-14z" fill="#E9A23B"/>
+    <path d="M-14 30c6-8 16-8 28 0-12 8-22 8-28 0z" fill="#2E7D6B"/>
+  </g>
+  <path d="M120 196l2.4 5.4 5.4 2.4-5.4 2.4L120 211.6l-2.4-5.4-5.4-2.4 5.4-2.4L120 196z" fill="#E9A23B"/>
+</svg>
